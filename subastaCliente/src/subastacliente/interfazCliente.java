@@ -31,32 +31,101 @@ public class interfazCliente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
+        jPanelPrincipal = new javax.swing.JPanel();
+        jPanelPujas = new javax.swing.JPanel();
+        jPanelReloj = new javax.swing.JPanel();
+        jTextFieldReloj = new javax.swing.JTextField();
+        jPanelInfoProducto = new javax.swing.JPanel();
+        jPanelSalida = new javax.swing.JPanel();
+        jTextFieldSalida = new javax.swing.JTextField();
+        jTextFieldEntrada = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setText("jButton1");
+        jPanelPrincipal.setBackground(new java.awt.Color(235, 245, 251));
+        jPanelPrincipal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(592, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(315, 315, 315))
+        jPanelPujas.setBackground(new java.awt.Color(91, 198, 240));
+
+        javax.swing.GroupLayout jPanelPujasLayout = new javax.swing.GroupLayout(jPanelPujas);
+        jPanelPujas.setLayout(jPanelPujasLayout);
+        jPanelPujasLayout.setHorizontalGroup(
+            jPanelPujasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 257, Short.MAX_VALUE)
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(131, 131, 131)
-                .addComponent(jButton1)
-                .addContainerGap(540, Short.MAX_VALUE))
+        jPanelPujasLayout.setVerticalGroup(
+            jPanelPujasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 570, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 700));
+        jPanelPrincipal.add(jPanelPujas, new org.netbeans.lib.awtextra.AbsoluteConstraints(743, 130, -1, 570));
+
+        jPanelReloj.setBackground(new java.awt.Color(33, 97, 140));
+
+        jTextFieldReloj.setText("jTextField1");
+
+        javax.swing.GroupLayout jPanelRelojLayout = new javax.swing.GroupLayout(jPanelReloj);
+        jPanelReloj.setLayout(jPanelRelojLayout);
+        jPanelRelojLayout.setHorizontalGroup(
+            jPanelRelojLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelRelojLayout.createSequentialGroup()
+                .addGap(38, 38, 38)
+                .addComponent(jTextFieldReloj, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(37, Short.MAX_VALUE))
+        );
+        jPanelRelojLayout.setVerticalGroup(
+            jPanelRelojLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelRelojLayout.createSequentialGroup()
+                .addGap(27, 27, 27)
+                .addComponent(jTextFieldReloj, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(27, Short.MAX_VALUE))
+        );
+
+        jPanelPrincipal.add(jPanelReloj, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 0, 260, 130));
+
+        jPanelInfoProducto.setBackground(new java.awt.Color(214, 234, 248));
+
+        javax.swing.GroupLayout jPanelInfoProductoLayout = new javax.swing.GroupLayout(jPanelInfoProducto);
+        jPanelInfoProducto.setLayout(jPanelInfoProductoLayout);
+        jPanelInfoProductoLayout.setHorizontalGroup(
+            jPanelInfoProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 740, Short.MAX_VALUE)
+        );
+        jPanelInfoProductoLayout.setVerticalGroup(
+            jPanelInfoProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 390, Short.MAX_VALUE)
+        );
+
+        jPanelPrincipal.add(jPanelInfoProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 740, 390));
+
+        jPanelSalida.setBackground(new java.awt.Color(93, 173, 226));
+
+        jTextFieldSalida.setText("jTextField1");
+
+        javax.swing.GroupLayout jPanelSalidaLayout = new javax.swing.GroupLayout(jPanelSalida);
+        jPanelSalida.setLayout(jPanelSalidaLayout);
+        jPanelSalidaLayout.setHorizontalGroup(
+            jPanelSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelSalidaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextFieldSalida, javax.swing.GroupLayout.DEFAULT_SIZE, 710, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanelSalidaLayout.setVerticalGroup(
+            jPanelSalidaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelSalidaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextFieldSalida, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        jPanelPrincipal.add(jPanelSalida, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 390, 740, 250));
+
+        jTextFieldEntrada.setText("jTextField2");
+        jPanelPrincipal.add(jTextFieldEntrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 640, 740, 60));
+
+        getContentPane().add(jPanelPrincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 700));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -97,7 +166,13 @@ public class interfazCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanelInfoProducto;
+    private javax.swing.JPanel jPanelPrincipal;
+    private javax.swing.JPanel jPanelPujas;
+    private javax.swing.JPanel jPanelReloj;
+    private javax.swing.JPanel jPanelSalida;
+    private javax.swing.JTextField jTextFieldEntrada;
+    private javax.swing.JTextField jTextFieldReloj;
+    private javax.swing.JTextField jTextFieldSalida;
     // End of variables declaration//GEN-END:variables
 }

@@ -36,6 +36,8 @@ public class interfazCliente extends javax.swing.JFrame {
 
         jPanelPrincipal = new javax.swing.JPanel();
         jPanelPujas = new javax.swing.JPanel();
+        jButtonPujar = new javax.swing.JButton();
+        jButtonRetirarse = new javax.swing.JButton();
         jPanelReloj = new javax.swing.JPanel();
         jTextFieldReloj = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -53,15 +55,31 @@ public class interfazCliente extends javax.swing.JFrame {
 
         jPanelPujas.setBackground(new java.awt.Color(91, 198, 240));
 
+        jButtonPujar.setBackground(new java.awt.Color(39, 174, 96));
+        jButtonPujar.setText("Pujar");
+
+        jButtonRetirarse.setBackground(new java.awt.Color(239, 53, 53));
+        jButtonRetirarse.setText("Retirarse");
+
         javax.swing.GroupLayout jPanelPujasLayout = new javax.swing.GroupLayout(jPanelPujas);
         jPanelPujas.setLayout(jPanelPujasLayout);
         jPanelPujasLayout.setHorizontalGroup(
             jPanelPujasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 260, Short.MAX_VALUE)
+            .addGroup(jPanelPujasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelPujasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButtonPujar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonRetirarse, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanelPujasLayout.setVerticalGroup(
             jPanelPujasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
+            .addGroup(jPanelPujasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jButtonPujar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonRetirarse)
+                .addContainerGap(487, Short.MAX_VALUE))
         );
 
         jPanelPrincipal.add(jPanelPujas, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 130, 260, 570));
@@ -191,6 +209,8 @@ public class interfazCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonPujar;
+    private javax.swing.JButton jButtonRetirarse;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanelInfoProducto;
     private javax.swing.JPanel jPanelPrincipal;

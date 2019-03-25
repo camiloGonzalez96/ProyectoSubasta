@@ -5,8 +5,6 @@
  */
 package subastacliente;
 
-import java.awt.GridLayout;
-
 /**
  *
  * @author juanc
@@ -18,11 +16,6 @@ public class interfazCliente extends javax.swing.JFrame {
      */
     public interfazCliente() {
         initComponents();
-        
-        GridLayout gridProductos = new GridLayout(2, 3, 5, 5);
-        jPanelProductos.setLayout(gridProductos);
-        
-        
     }
 
     /**

@@ -33,6 +33,7 @@ public class interfazServidor extends javax.swing.JFrame {
         jTextFieldCliente2 = new javax.swing.JTextField();
         jTextFieldCliente3 = new javax.swing.JTextField();
         jTextFieldCliente4 = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
         jScrollPaneInfoGeneral = new javax.swing.JScrollPane();
         jTextAreaInfoGeneral = new javax.swing.JTextArea();
         jPanelDerecha = new javax.swing.JPanel();
@@ -59,6 +60,9 @@ public class interfazServidor extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabel1.setText("Clientes:");
+
         javax.swing.GroupLayout jPanelClientesConectadosLayout = new javax.swing.GroupLayout(jPanelClientesConectados);
         jPanelClientesConectados.setLayout(jPanelClientesConectadosLayout);
         jPanelClientesConectadosLayout.setHorizontalGroup(
@@ -67,11 +71,16 @@ public class interfazServidor extends javax.swing.JFrame {
             .addComponent(jTextFieldCliente2)
             .addComponent(jTextFieldCliente3)
             .addComponent(jTextFieldCliente4)
+            .addGroup(jPanelClientesConectadosLayout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanelClientesConectadosLayout.setVerticalGroup(
             jPanelClientesConectadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanelClientesConectadosLayout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextFieldCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextFieldCliente2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -79,7 +88,7 @@ public class interfazServidor extends javax.swing.JFrame {
                 .addComponent(jTextFieldCliente3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTextFieldCliente4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(329, Short.MAX_VALUE))
+                .addContainerGap(300, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanelClientesConectados, java.awt.BorderLayout.LINE_START);
@@ -196,6 +205,7 @@ public class interfazServidor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabelTextoReloj;
     private javax.swing.JPanel jPanelClientesConectados;
     private javax.swing.JPanel jPanelDerecha;

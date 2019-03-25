@@ -27,21 +27,137 @@ public class interfazServidor extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        jPanelClientesConectados = new javax.swing.JPanel();
+        jTextFieldCliente1 = new javax.swing.JTextField();
+        jTextFieldCliente2 = new javax.swing.JTextField();
+        jTextFieldCliente3 = new javax.swing.JTextField();
+        jTextFieldCliente4 = new javax.swing.JTextField();
+        jScrollPaneInfoGeneral = new javax.swing.JScrollPane();
+        jTextAreaInfoGeneral = new javax.swing.JTextArea();
+        jPanelDerecha = new javax.swing.JPanel();
+        jPanelReloj = new javax.swing.JPanel();
+        jLabelTextoReloj = new javax.swing.JLabel();
+        jTextFieldReloj = new javax.swing.JTextField();
+        jPanelInfoProducto = new javax.swing.JPanel();
+        jTextFieldIngreso = new javax.swing.JTextField();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setSize(new java.awt.Dimension(792, 654));
+
+        jPanelClientesConectados.setBackground(new java.awt.Color(150, 220, 247));
+
+        jTextFieldCliente1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldCliente1ActionPerformed(evt);
+            }
+        });
+
+        jTextFieldCliente2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldCliente2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanelClientesConectadosLayout = new javax.swing.GroupLayout(jPanelClientesConectados);
+        jPanelClientesConectados.setLayout(jPanelClientesConectadosLayout);
+        jPanelClientesConectadosLayout.setHorizontalGroup(
+            jPanelClientesConectadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTextFieldCliente1, javax.swing.GroupLayout.DEFAULT_SIZE, 104, Short.MAX_VALUE)
+            .addComponent(jTextFieldCliente2)
+            .addComponent(jTextFieldCliente3)
+            .addComponent(jTextFieldCliente4)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+        jPanelClientesConectadosLayout.setVerticalGroup(
+            jPanelClientesConectadosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelClientesConectadosLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jTextFieldCliente1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextFieldCliente2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextFieldCliente3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextFieldCliente4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(329, Short.MAX_VALUE))
         );
+
+        getContentPane().add(jPanelClientesConectados, java.awt.BorderLayout.LINE_START);
+
+        jTextAreaInfoGeneral.setColumns(20);
+        jTextAreaInfoGeneral.setRows(5);
+        jScrollPaneInfoGeneral.setViewportView(jTextAreaInfoGeneral);
+
+        getContentPane().add(jScrollPaneInfoGeneral, java.awt.BorderLayout.CENTER);
+
+        jPanelDerecha.setBackground(new java.awt.Color(102, 206, 245));
+        jPanelDerecha.setLayout(new java.awt.BorderLayout());
+
+        jPanelReloj.setBackground(new java.awt.Color(0, 153, 255));
+
+        jLabelTextoReloj.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabelTextoReloj.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelTextoReloj.setText("Tiempo Restante:");
+
+        jTextFieldReloj.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldRelojActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanelRelojLayout = new javax.swing.GroupLayout(jPanelReloj);
+        jPanelReloj.setLayout(jPanelRelojLayout);
+        jPanelRelojLayout.setHorizontalGroup(
+            jPanelRelojLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelRelojLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelRelojLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jTextFieldReloj, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelTextoReloj))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanelRelojLayout.setVerticalGroup(
+            jPanelRelojLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelRelojLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelTextoReloj)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTextFieldReloj, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanelDerecha.add(jPanelReloj, java.awt.BorderLayout.PAGE_START);
+
+        getContentPane().add(jPanelDerecha, java.awt.BorderLayout.LINE_END);
+
+        javax.swing.GroupLayout jPanelInfoProductoLayout = new javax.swing.GroupLayout(jPanelInfoProducto);
+        jPanelInfoProducto.setLayout(jPanelInfoProductoLayout);
+        jPanelInfoProductoLayout.setHorizontalGroup(
+            jPanelInfoProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jTextFieldIngreso, javax.swing.GroupLayout.DEFAULT_SIZE, 762, Short.MAX_VALUE)
+        );
+        jPanelInfoProductoLayout.setVerticalGroup(
+            jPanelInfoProductoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelInfoProductoLayout.createSequentialGroup()
+                .addComponent(jTextFieldIngreso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 74, Short.MAX_VALUE))
+        );
+
+        getContentPane().add(jPanelInfoProducto, java.awt.BorderLayout.PAGE_END);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jTextFieldRelojActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldRelojActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldRelojActionPerformed
+
+    private void jTextFieldCliente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldCliente1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldCliente1ActionPerformed
+
+    private void jTextFieldCliente2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldCliente2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldCliente2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -79,5 +195,18 @@ public class interfazServidor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel jLabelTextoReloj;
+    private javax.swing.JPanel jPanelClientesConectados;
+    private javax.swing.JPanel jPanelDerecha;
+    private javax.swing.JPanel jPanelInfoProducto;
+    private javax.swing.JPanel jPanelReloj;
+    private javax.swing.JScrollPane jScrollPaneInfoGeneral;
+    private javax.swing.JTextArea jTextAreaInfoGeneral;
+    private javax.swing.JTextField jTextFieldCliente1;
+    private javax.swing.JTextField jTextFieldCliente2;
+    private javax.swing.JTextField jTextFieldCliente3;
+    private javax.swing.JTextField jTextFieldCliente4;
+    private javax.swing.JTextField jTextFieldIngreso;
+    private javax.swing.JTextField jTextFieldReloj;
     // End of variables declaration//GEN-END:variables
 }

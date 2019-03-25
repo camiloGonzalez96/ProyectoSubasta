@@ -16,6 +16,7 @@ public class interfazServidor extends javax.swing.JFrame {
      */
     public interfazServidor() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

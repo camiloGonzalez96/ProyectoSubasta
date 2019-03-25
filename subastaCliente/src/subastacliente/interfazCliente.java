@@ -16,6 +16,7 @@ public class interfazCliente extends javax.swing.JFrame {
      */
     public interfazCliente() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -33,7 +34,7 @@ public class interfazCliente extends javax.swing.JFrame {
         jButtonRetirarse = new javax.swing.JButton();
         jPanelReloj = new javax.swing.JPanel();
         jTextFieldReloj = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        jLabelTextoReloj = new javax.swing.JLabel();
         jPanelInfoProducto = new javax.swing.JPanel();
         jPanelProductos = new javax.swing.JPanel();
         jTextFieldEntrada = new javax.swing.JTextField();
@@ -85,16 +86,16 @@ public class interfazCliente extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("La subasta cierra en:");
+        jLabelTextoReloj.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        jLabelTextoReloj.setForeground(new java.awt.Color(255, 255, 255));
+        jLabelTextoReloj.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabelTextoReloj.setText("La subasta cierra en:");
 
         javax.swing.GroupLayout jPanelRelojLayout = new javax.swing.GroupLayout(jPanelReloj);
         jPanelReloj.setLayout(jPanelRelojLayout);
         jPanelRelojLayout.setHorizontalGroup(
             jPanelRelojLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jLabelTextoReloj, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelRelojLayout.createSequentialGroup()
                 .addContainerGap(40, Short.MAX_VALUE)
                 .addComponent(jTextFieldReloj, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -104,7 +105,7 @@ public class interfazCliente extends javax.swing.JFrame {
             jPanelRelojLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelRelojLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1)
+                .addComponent(jLabelTextoReloj)
                 .addGap(18, 18, 18)
                 .addComponent(jTextFieldReloj, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(29, Short.MAX_VALUE))
@@ -204,7 +205,7 @@ public class interfazCliente extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonPujar;
     private javax.swing.JButton jButtonRetirarse;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabelTextoReloj;
     private javax.swing.JPanel jPanelInfoProducto;
     private javax.swing.JPanel jPanelPrincipal;
     private javax.swing.JPanel jPanelProductos;

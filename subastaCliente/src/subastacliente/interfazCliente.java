@@ -32,6 +32,8 @@ public class interfazCliente extends javax.swing.JFrame {
         jPanelPujas = new javax.swing.JPanel();
         jButtonPujar = new javax.swing.JButton();
         jButtonRetirarse = new javax.swing.JButton();
+        jButtonAceptarProducto = new javax.swing.JButton();
+        jButtonRechazarProducto = new javax.swing.JButton();
         jPanelReloj = new javax.swing.JPanel();
         jTextFieldReloj = new javax.swing.JTextField();
         jLabelTextoReloj = new javax.swing.JLabel();
@@ -61,15 +63,23 @@ public class interfazCliente extends javax.swing.JFrame {
         jButtonRetirarse.setBackground(new java.awt.Color(239, 53, 53));
         jButtonRetirarse.setText("Retirarse");
 
+        jButtonAceptarProducto.setBackground(new java.awt.Color(32, 236, 16));
+        jButtonAceptarProducto.setText("Aceptar Producto");
+
+        jButtonRechazarProducto.setBackground(new java.awt.Color(255, 35, 35));
+        jButtonRechazarProducto.setText("Rechazar Producto");
+
         javax.swing.GroupLayout jPanelPujasLayout = new javax.swing.GroupLayout(jPanelPujas);
         jPanelPujas.setLayout(jPanelPujasLayout);
         jPanelPujasLayout.setHorizontalGroup(
             jPanelPujasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelPujasLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelPujasLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanelPujasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonPujar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButtonRetirarse, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE))
+                .addGroup(jPanelPujasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButtonRechazarProducto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonAceptarProducto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonPujar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jButtonRetirarse, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 230, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanelPujasLayout.setVerticalGroup(
@@ -79,7 +89,11 @@ public class interfazCliente extends javax.swing.JFrame {
                 .addComponent(jButtonPujar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButtonRetirarse)
-                .addContainerGap(487, Short.MAX_VALUE))
+                .addGap(100, 100, 100)
+                .addComponent(jButtonAceptarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButtonRechazarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(266, Short.MAX_VALUE))
         );
 
         jPanelPrincipal.add(jPanelPujas, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 130, 260, 570));
@@ -291,7 +305,9 @@ public class interfazCliente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonAceptarProducto;
     private javax.swing.JButton jButtonPujar;
+    private javax.swing.JButton jButtonRechazarProducto;
     private javax.swing.JButton jButtonRetirarse;
     private javax.swing.JLabel jLabelTextoReloj;
     private javax.swing.JPanel jPanel1;

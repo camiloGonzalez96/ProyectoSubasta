@@ -56,9 +56,11 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="jButtonRechazarProducto" max="32767" attributes="0"/>
+                          <Component id="jButtonAceptarProducto" alignment="1" max="32767" attributes="0"/>
                           <Component id="jButtonPujar" alignment="0" max="32767" attributes="0"/>
                           <Component id="jButtonRetirarse" alignment="0" pref="230" max="32767" attributes="0"/>
                       </Group>
@@ -73,7 +75,11 @@
                       <Component id="jButtonPujar" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jButtonRetirarse" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="487" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="jButtonAceptarProducto" min="-2" pref="56" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="jButtonRechazarProducto" min="-2" pref="56" max="-2" attributes="0"/>
+                      <EmptySpace pref="266" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -93,6 +99,22 @@
                   <Color blue="35" green="35" red="ef" type="rgb"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Retirarse"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonAceptarProducto">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="10" green="ec" red="20" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Aceptar Producto"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="jButtonRechazarProducto">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="23" green="23" red="ff" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Rechazar Producto"/>
               </Properties>
             </Component>
           </SubComponents>
